@@ -14,9 +14,6 @@ export const MoviePoster = ({movie, width = 300, height = 420}: Props) => {
 
   const navigation = useNavigation();
 
-  // console.log(movie);
-  console.log(movie.poster_path);
-
   return (
     <TouchableOpacity
       onPress={() => navigation.navigate('DetailScreen', movie)}
